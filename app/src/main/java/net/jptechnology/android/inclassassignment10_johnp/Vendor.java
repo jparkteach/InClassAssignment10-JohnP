@@ -10,4 +10,28 @@ public class Vendor {
         this.info = info;
         this.logoId = logoId;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getInfo() {
+        return info;
+    }
+
+    public void setInfo(String info) {
+        this.info = info;
+    }
+
+    public int getLogoId() {
+        return logoId;
+    }
+
+    public void setLogoId(int logoId) {
+        this.logoId = logoId;
+    }
 }

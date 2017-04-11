@@ -1,6 +1,7 @@
 package net.jptechnology.android.inclassassignment10_johnp;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -32,6 +33,9 @@ public class VendorViewHolder extends RecyclerView.ViewHolder {
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Vendor passvendor = new Vendor(vendor.name, vendor.info, vendor.logoId);
+                Intent intent = SecondActivity.makeIntent(context, passvendor);
+                context.startActivity(intent);
                 Toast.makeText(context, vendorNameView.getText(), Toast.LENGTH_SHORT).show();
             }
         });

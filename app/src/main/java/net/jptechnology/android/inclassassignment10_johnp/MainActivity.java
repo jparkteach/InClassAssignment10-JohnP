@@ -43,7 +43,13 @@ public class MainActivity extends AppCompatActivity {
         else if (num == 1)
             return new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.arrmcambio);
         else if (num == 2)
-            return new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.arrmcambio);
+            return new Vendor("Avanti Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.avanti);
+        else if (num == 3)
+            return new Vendor("GetMoney Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.getmoney);
+        else if (num == 4)
+            return new Vendor("Green Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.greencambio);
+        else if (num == 5)
+            return new Vendor("Moneygram Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.moneygram);
         else
             return new Vendor("SLW Corretora - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.slwcorretora);
     }

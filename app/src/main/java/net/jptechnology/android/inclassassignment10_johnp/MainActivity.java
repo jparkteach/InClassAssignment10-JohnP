@@ -39,24 +39,24 @@ public class MainActivity extends AppCompatActivity {
     private Vendor getRandomVendor() {
         int num = (int) (Math.random() * 7);
         if (num == 0)
-            return new Vendor("Amazonia Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.amazonia);
+            return new Vendor("Amazonia Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.amazonia);
         else if (num == 1)
-            return new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.arrmcambio);
+            return new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.arrmcambio);
         else if (num == 2)
-            return new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.arrmcambio);
+            return new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.arrmcambio);
         else
-            return new Vendor("SLW Corretora - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.slwcorretora);
+            return new Vendor("SLW Corretora - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.slwcorretora);
     }
 
     private void initialData() {
         vendors = new ArrayList<>();
-        vendors.add(new Vendor("Amazonia Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.amazonia));
-        vendors.add(new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.arrmcambio));
-        vendors.add(new Vendor("Avanti Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.avanti));
-        vendors.add(new Vendor("GetMoney Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.getmoney));
-        vendors.add(new Vendor("Green Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.greencambio));
-        vendors.add(new Vendor("Moneygram Cambio - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.moneygram));
-        vendors.add(new Vendor("SLW Corretora - Exchange", "$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan", R.drawable.slwcorretora));
+        vendors.add(new Vendor("Amazonia Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.amazonia));
+        vendors.add(new Vendor("ARRM Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.arrmcambio));
+        vendors.add(new Vendor("Avanti Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.avanti));
+        vendors.add(new Vendor("GetMoney Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.getmoney));
+        vendors.add(new Vendor("Green Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.greencambio));
+        vendors.add(new Vendor("Moneygram Cambio - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.moneygram));
+        vendors.add(new Vendor("SLW Corretora - Exchange", "$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan", R.drawable.slwcorretora));
     }
 
     @Override

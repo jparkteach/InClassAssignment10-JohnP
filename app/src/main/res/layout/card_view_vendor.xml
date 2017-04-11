@@ -35,6 +35,6 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/vendor_name"
             android:layout_toRightOf="@+id/vendor_logo"
-            tools:text="$1 = 3.24 Reals\n$1 = 0.94 Euros\n$1 = 6.90 Yuan" />
+            tools:text="$1 = 3.24 Reais\n$1 = 0.69 Euros\n$1 = 6.90 Chinese Yuan" />
     </RelativeLayout>
 </android.support.v7.widget.CardView>

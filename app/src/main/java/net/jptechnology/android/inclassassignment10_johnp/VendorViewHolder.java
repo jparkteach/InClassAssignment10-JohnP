@@ -11,79 +11,29 @@ import android.widget.Toast;
 public class VendorViewHolder extends RecyclerView.ViewHolder {
 
     private CardView cardView;
-    private TextView vendorName;
-    private TextView vendorInfo;
-    private ImageView vendorLogo;
+    private TextView vendorNameView;
+    private TextView vendorInfoView;
+    private ImageView vendorLogoView;
     private Context context;
 
     public VendorViewHolder(View itemView, Context context) {
         super(itemView);
         cardView = (CardView) itemView.findViewById(R.id.card_view);
-        vendorName = (TextView) itemView.findViewById(R.id.vendor_name);
-        vendorInfo = (TextView) itemView.findViewById(R.id.vendor_info);
-        vendorLogo = (ImageView) itemView.findViewById(R.id.vendor_logo);
+        vendorNameView = (TextView) itemView.findViewById(R.id.vendor_name);
+        vendorInfoView = (TextView) itemView.findViewById(R.id.vendor_info);
+        vendorLogoView = (ImageView) itemView.findViewById(R.id.vendor_logo);
         this.context = context;
     }
 
     public void bind(final Vendor vendor) {
-        vendorName.setText(vendor.name);
-        vendorInfo.setText(vendor.info);
-        vendorLogo.setImageResource(vendor.logoId);
+        vendorNameView.setText(vendor.name);
+        vendorInfoView.setText(vendor.info);
+        vendorLogoView.setImageResource(vendor.logoId);
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(context, vendorName.getText(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(context, vendorNameView.getText(), Toast.LENGTH_SHORT).show();
             }
         });
     }
 }
-//    private CardView cardView;
-//    private TextView vendorName;
-//    private TextView vendorInfo;
-//    private ImageView vendorLogo;
-//
-//    public VendorViewHolder(View itemView, final Context context) {
-//        super(itemView);
-//        cardView = (CardView) itemView.findViewById(R.id.card_view);
-//        vendorName = (TextView) itemView.findViewById(R.id.vendor_name);
-//        vendorInfo = (TextView) itemView.findViewById(R.id.vendor_info);
-//        vendorLogo = (ImageView) itemView.findViewById(R.id.vendor_logo);
-//
-//        cardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(context, vendorName.getText(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//    }
-//}
-
-//    private CardView cardView;
-//    private TextView vendorName;
-//    private TextView vendorInfo;
-//    private ImageView vendorLogo;
-//    private Context context;
-//
-//
-//    public VendorViewHolder(View itemView, final Context context) {
-//        super(itemView);
-//        cardView = (CardView) itemView.findViewById(R.id.card_view);
-//        vendorName = (TextView) itemView.findViewById(R.id.vendor_name);
-//        vendorInfo = (TextView) itemView.findViewById(R.id.vendor_info);
-//        vendorLogo = (ImageView) itemView.findViewById(R.id.vendor_logo);
-//        this.context = context;
-//    }
-//
-//    public void bind(Vendor vendor) {
-//        vendorName.setText(vendor.name);
-//        vendorInfo.setText(vendor.info);
-//        vendorLogo.setImageResource(vendor.logoId);
-//        cardView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Toast.makeText(context, vendorName.getText(), Toast.LENGTH_SHORT).show();
-//            }
-//        });
-//    }
-//}
-
